@@ -12,7 +12,7 @@ def smallest_multiple
       end
       comparison -= 1
     end
-    base += 10 # because the last digit of the number we are looking for has to be 0 and we start with number 20
+    base += 20 # because the number that we are searching for has to be a multiple of 20
     break unless final.zero?
   end
   final
