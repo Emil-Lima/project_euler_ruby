@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "benchmark"
-
 def nth_number(num)
   prime_numbers = []
   base = 1
@@ -21,5 +19,3 @@ def nth_number(num)
   end
   prime_numbers.last
 end
-
-puts Benchmark.measure { nth_number(10001) }
