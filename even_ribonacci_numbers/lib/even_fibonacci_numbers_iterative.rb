@@ -6,10 +6,10 @@ def even_fibonacci_sum(num)
   holder = 0
   sum = 0
   while holder < num
+    sum += holder if holder.even?
     holder = num2
     num2 += num1
     num1 = holder
-    sum += holder if holder.even?
   end
   sum
 end
