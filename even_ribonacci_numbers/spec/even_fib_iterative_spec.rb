@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './lib/even_fibonacci_numbers_iterative'
 
 describe '#sum_of_even(n)' do
