@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-def largest_product(num, series)
+def largest_product(fullnum, series)
   result = 1
   right_numbers = []
-  arr_of_numbers = num.to_s.split('')
+  arr_of_numbers = fullnum.to_s.split('')
   arr_of_numbers.each_with_index do |_el, index|
     temporary_numbers = []
     temporary_result = 1
