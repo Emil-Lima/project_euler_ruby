@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-def smallest_multiple
+def smallest_multiple(num)
   final = 0
-  base = 20
+  base = num
   while final.zero?
-    comparison = 20
+    comparison = num
     while (base % comparison).zero?
       if comparison == 1
         final = base
@@ -12,7 +12,7 @@ def smallest_multiple
       end
       comparison -= 1
     end
-    base += 20 # because the number that we are searching for has to be a multiple of 20
+    base += num # because the number that we are searching for has to be a multiple of 20
     break unless final.zero?
   end
   final
